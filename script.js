@@ -7,7 +7,7 @@
 // @grant        none
 // @require https://code.jquery.com/jquery-latest.js
 // ==/UserScript==
-var replaceArry = [
+var replaceArray = [
     [/00-Secretaria  Lic. Informática/gi, 'Secretaria'],
     [/00-O Café da Informática/gi, 'Café'],
     [/00-Coordenação Lic. Inf. - Estudantes/gi, 'Coordenação']
@@ -17,7 +17,7 @@ var replaceArry = [
     'use strict';
     $('body').hide();
     $(document).ready(function() {
-        var numTerms = replaceArry.length;
+        var numTerms = replaceArray.length;
         var txtWalker = document.createTreeWalker(
             document.body,
             NodeFilter.SHOW_TEXT, {
@@ -37,7 +37,7 @@ var replaceArry = [
             var oldTxt = txtNode.nodeValue;
 
             for (var J = 0; J < numTerms; J++) {
-                oldTxt = oldTxt.replace(replaceArry[J][0], replaceArry[J][1]);
+                oldTxt = oldTxt.replace(replaceArray[J][0], replaceArray[J][1]);
             }
             txtNode.nodeValue = oldTxt;
             txtNode = txtWalker.nextNode();
