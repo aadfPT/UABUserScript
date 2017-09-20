@@ -6,6 +6,7 @@
 // @match        http://elearning.uab.pt/*
 // @grant        none
 // @require https://code.jquery.com/jquery-latest.js
+// @credits Treewalker obtained from https://stackoverflow.com/a/24419809
 // ==/UserScript==
 var replaceArray = [
     [/00-Secretaria  Lic. Informática/gi, 'Secretaria'],
