@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Uab Informática
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.4
 // @description  Muda os nomes das disciplinas
 // @match        http://elearning.uab.pt/*
 // @exclude        http://elearning.uab.pt/*.pdf
@@ -83,7 +83,7 @@ function SearchAndReplace(target) {
             characterData: false
         };
         observer.observe(document.body, config);
+        var t1 = performance.now();
+        console.log("Call took " + (t1 - t0) + " milliseconds.");
     });
-    var t1 = performance.now();
-    console.log("Call took " + (t1 - t0) + " milliseconds.");
 })();
