@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Uab Informática
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  Muda os nomes das disciplinas
 // @match        http://elearning.uab.pt/*
 // @exclude        http://elearning.uab.pt/*.pdf
@@ -9,6 +9,7 @@
 // @require https://code.jquery.com/jquery-latest.js
 // @credits Treewalker obtained from https://stackoverflow.com/a/24419809
 // ==/UserScript==
+var t0 = performance.now();
 var replaceArray = [
     [/^(00-Secretaria  Lic. Informática|2103-sec)/g, 'Secretaria'],
     [/^(00-O Café da Informática|2103-cafe)/g, 'Café'],
@@ -16,6 +17,7 @@ var replaceArray = [
     [/^(Arquitectura de Computadores 2017 01|21010_17_0[1-9])/g, 'Arquitectura de Computadores'],
     [/^(Arquitectura de Computadores \(Espaço Central\)|21010_17_00)/g, 'Arquitectura de Computadores (Central)'],
     [/^(Cálculo para Informática 2017 01|21157_17_0[1-9])/g, 'Cálculo para Informática'],
+    [/^(Cálculo para Informática \(Espaço Central\) 2017|21157_17_00)/g, 'Cálculo para Informática (Central)'],
     [/^(Álgebra Linear I 2017 01|21002_17_0[1-9])/g, 'Álgebra Linear I'],
     [/^(Álgebra Linear I - Espaço Central 2017|21002_17_00)/g, 'Álgebra Linear I (Central)'],
     [/^(LaTeX 2017\/2018|LATEX_17)/g, 'LaTeX 2017/2018'],
@@ -82,4 +84,6 @@ function SearchAndReplace(target) {
         };
         observer.observe(document.body, config);
     });
+    var t1 = performance.now();
+    console.log("Call took " + (t1 - t0) + " milliseconds.");
 })();
