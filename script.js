@@ -1,13 +1,15 @@
 // ==UserScript==
 // @name         Uab Informática
 // @namespace    http://tampermonkey.net/
-// @version      0.4
+// @version      0.5
 // @description  Muda os nomes das disciplinas
 // @match        http://elearning.uab.pt/*
 // @exclude        http://elearning.uab.pt/*.pdf
 // @grant        none
 // @require https://code.jquery.com/jquery-latest.js
 // @credits Treewalker obtained from https://stackoverflow.com/a/24419809
+// @downloadUrl  https://raw.githubusercontent.com/aadfPT/UABUserScript/master/script.js
+// @updateUrl    https://raw.githubusercontent.com/aadfPT/UABUserScript/master/script.js
 // ==/UserScript==
 var t0 = performance.now();
 var replaceArray = [
