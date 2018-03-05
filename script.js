@@ -29,6 +29,13 @@ var replaceArray = [
     [/^(Fundamentos Base Dados 2017|21053_17_0[1-9])/g, 'Fundamentos Base Dados'],
     [/^(Fundamentos Base Dados - Espaço Central 2017|21053_17_00)/g, 'Fundamentos Base Dados (Central)'],
     [/^(Linguagens e Computação 2017|21078_17_0[1-9])/gi, 'Linguagens e Computação'],
+    [/^(Elementos de Probabilidades e Estatística (espaço central) 2017|21037_17_00)/gi, 'Elementos de Probabilidades e Estatística (Central)'],
+    [/^(Elementos de Probabilidades e Estatística 2017 01|21037_17_0[1-9])/gi, 'Elementos de Probabilidades e Estatística'],
+    [/^(Matemática Finita 2017 01|21082_17_0[1-9])/gi, 'Matemática Finita'],
+    [/^(Matemática Finita 2017 (Meta Disciplina)|21082_17_00)/gi, 'Matemática Finita (Central)'],
+    [/^(Linguagens de Programação 2017 03|21077_17_0[1-9])/gi, 'Linguagens de Programação'],
+    [/^(Modelação de Sistemas de Informação(Espaço Central) 2017|21177_17_00)/gi, 'Modelação de Sistemas de Informação (Central)'],
+    [/^(Modelação de Sistemas de Informação 2017 01|21177_17_0[1-9])/gi, 'Modelação de Sistemas de Informação'],
     [/^(00-Coordenação Lic. Inf. - Estudantes|2103-coord)/g, 'Coordenação']
     // etc.
 ];
