@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Uab Informática
 // @namespace    http://tampermonkey.net/
-// @version      0.5
+// @version      0.6
 // @description  Muda os nomes das disciplinas
 // @match        http://elearning.uab.pt/*
 // @exclude        http://elearning.uab.pt/*.pdf
